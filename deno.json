@@ -1,0 +1,7 @@
+{
+  "version": "1.0.0",
+  "imports": {
+    "zx": "npm:zx@^7.2.3"
+  },
+  "scopes": {}
+}
