@@ -1,2 +1,5 @@
 # Final binary
 devcontainer
+
+# Deno lockfile
+deno.lock

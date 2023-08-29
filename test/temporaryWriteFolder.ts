@@ -4,12 +4,10 @@ import { rmSync } from "node:fs";
 import { join } from "node:path";
 import { writeFile, mkdir } from "node:fs/promises";
 
-async function createTempFolder() {}
-
 export default async function temporaryWriteFolder(
   files: Record<string, string>
 ) {
-  const folder = join(tmpdir(), Math.random());
+  const folder = join(tmpdir(), Math.random().toString());
   await mkdir(folder, { recursive: true });
   process.on("exit", () => {
     rmSync(folder, { recursive: true });
